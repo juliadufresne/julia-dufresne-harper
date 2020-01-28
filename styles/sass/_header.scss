@@ -1,0 +1,53 @@
+header {
+    // height: 100vh;
+    background-color: $lightbluegrey;
+
+    nav {
+        height: 10vh;
+        @include flexrow;
+    }
+
+    ul {
+        @include flexrow;
+    }
+
+    li {
+        padding: 12px 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: $oswald;
+        font-size: 1.7rem;
+    }
+
+    .title {
+        font-size: 3.4rem;
+    }
+
+    .headerContent {
+        @include flexrow;
+        justify-content: space-around;
+    }
+
+    .headerImage {
+        margin-top: 20px;
+        margin-right: 80px;
+        max-width: 25vw;
+        box-shadow: 20px 20px $white;
+        position: relative;
+        top: 30px;
+    }
+
+    .headerText {
+        font-size: 7rem;
+        padding-right: 10vw;
+        position: relative;
+        text-transform: uppercase;
+        font-family: $oswald;
+
+        img {
+            position: absolute;
+            top: -50px;
+            right: 90px;
+        }
+    }
+}

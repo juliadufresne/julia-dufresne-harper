@@ -1,0 +1,22 @@
+$black: #171717;
+$accent: #F38D8D;
+$lightbluegrey: #b2dfe8;
+$greyblue: #68B0C1;
+$duskblue: #227284;
+$white: #F6F6F6;
+$oswald: 'Oswald', sans-serif;
+$cabin: 'Cabin', sans-serif;
+
+@mixin flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexcol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
