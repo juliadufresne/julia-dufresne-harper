@@ -1,0 +1,49 @@
+.blog {
+
+    .blogRowOne,
+    .blogRowTwo {
+        @include flexrow;
+        justify-content: space-between;
+    }
+
+    .blogImgOne,
+    .blogImgTwo {
+        width: 50%;
+    }
+
+    .blogImgOne {
+        position: relative;
+        bottom: 40px;
+        box-shadow: 20px 20px $greyblue, -200px 20px $greyblue;
+    }
+
+    .blogImgTwo {
+        position: relative;
+        bottom: 40px;
+        box-shadow: 20px 20px $lightbluegrey, 200px 20px $lightbluegrey;
+    }
+
+    .blogImgTwo {
+        position: relative;
+        top: 40px;
+    }
+
+    .blogTextOne,
+    .blogTextTwo {
+        width: 40%;
+    }
+
+    h3 {
+        @include header;
+        font-size: 2.4rem;
+    }
+
+    p {
+        padding: 20px 0; 
+        @include body;
+    }
+
+    button {
+        @include buttondefault;
+    }
+}

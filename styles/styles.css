@@ -235,6 +235,55 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+  /* 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* STRIPPING STYLES */
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
 header {
   background-color: #b2dfe8;
 }
@@ -337,51 +386,307 @@ header .headerText h1::after {
   right: -65px;
 }
 
-html {
-  font-size: 62.5%;
-  /* 10px */
+.about {
+  background-color: #F6F6F6;
 }
 
-body {
+.about div {
+  padding: 100px 0;
+  padding-left: 35%;
+}
+
+.about h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.about p {
+  padding: 20px 0;
+  font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+.about a {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: #F38D8D;
+  padding: 12px 32px;
+}
+
+.aboutInfo {
+  background-color: #F6F6F6;
+}
+
+.aboutInfo .banner {
+  background-image: url("../harper-assets/home-image-2.jpg");
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutInfo .rowOne,
+.aboutInfo .rowTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutInfo .rowOne .aboutContent,
+.aboutInfo .rowTwo .aboutContent {
+  width: 50%;
+  padding: 40px 100px;
+  padding-right: 0;
+}
+
+.aboutInfo .rowOne .aboutContent:nth-child(2),
+.aboutInfo .rowOne .aboutContent:nth-child(4),
+.aboutInfo .rowTwo .aboutContent:nth-child(2),
+.aboutInfo .rowTwo .aboutContent:nth-child(4) {
+  padding-right: 20px;
+}
+
+.aboutInfo .rowOne p,
+.aboutInfo .rowTwo p {
+  padding-top: 20px;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+.aboutInfo .rowOne .aboutTitle,
+.aboutInfo .rowTwo .aboutTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.wrapper {
-  max-width: 1200px;
-  width: 80%;
-  margin: 0 auto;
+.aboutInfo .rowOne .aboutTitle i,
+.aboutInfo .rowTwo .aboutTitle i {
+  position: absolute;
+  left: -60px;
+  background-color: #b2dfe8;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 2rem;
 }
 
-/* STRIPPING STYLES */
-body,
-h1,
-h2,
-h3,
-h4,
-ul,
-p {
-  margin: 0;
-  padding: 0;
+.aboutInfo .rowOne .aboutTitle h3,
+.aboutInfo .rowTwo .aboutTitle h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 2.4rem;
 }
 
-ul {
-  list-style: none;
+.aboutInfo .rowOne {
+  padding-top: 60px;
 }
 
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
+.aboutInfo .rowTwo {
+  padding-bottom: 60px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.blog .blogRowOne,
+.blog .blogRowTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-button {
-  border: none;
-  cursor: pointer;
+.blog .blogImgOne,
+.blog .blogImgTwo {
+  width: 50%;
+}
+
+.blog .blogImgOne {
+  position: relative;
+  bottom: 40px;
+  -webkit-box-shadow: 20px 20px #68B0C1, -200px 20px #68B0C1;
+          box-shadow: 20px 20px #68B0C1, -200px 20px #68B0C1;
+}
+
+.blog .blogImgTwo {
+  position: relative;
+  bottom: 40px;
+  -webkit-box-shadow: 20px 20px #b2dfe8, 200px 20px #b2dfe8;
+          box-shadow: 20px 20px #b2dfe8, 200px 20px #b2dfe8;
+}
+
+.blog .blogImgTwo {
+  position: relative;
+  top: 40px;
+}
+
+.blog .blogTextOne,
+.blog .blogTextTwo {
+  width: 40%;
+}
+
+.blog h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 2.4rem;
+}
+
+.blog p {
+  padding: 20px 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+.blog button {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: #F38D8D;
+  padding: 12px 32px;
+}
+
+.bio {
+  background-color: #F6F6F6;
+}
+
+.bio .bioContent {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bio .bioContent .bioImg {
+  width: 25%;
+  -webkit-box-shadow: 20px 20px #227284;
+          box-shadow: 20px 20px #227284;
+}
+
+.bio .bioContent .bioText {
+  width: 65%;
+}
+
+.bio .bioContent .bioText h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.bio .bioContent .bioText p {
+  padding: 30px 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+.bio .bioContent .bioText a {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: #F38D8D;
+  padding: 12px 32px;
+}
+
+.gallery {
+  padding: 80px 0;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery ul li:nth-child(2) {
+  margin: 0 40px;
+}
+
+footer {
+  background-color: #171717;
+  width: 100%;
+}
+
+footer p {
+  font-family: "Cabin", sans-serif;
+  color: #F6F6F6;
+  text-align: center;
+  padding: 20px 0;
 }

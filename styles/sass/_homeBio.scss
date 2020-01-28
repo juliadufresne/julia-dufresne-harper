@@ -1,0 +1,31 @@
+.bio {
+    background-color: $white;
+
+    .bioContent {
+        padding: 100px 0;
+        @include flexrow;
+        justify-content: space-between;
+
+        .bioImg {
+            width: 25%;
+            box-shadow: 20px 20px $duskblue;
+        }
+        
+        .bioText {
+            width: 65%;
+
+            h3 {
+                @include header;
+            }
+
+            p {
+                padding: 30px 0;
+                @include body;
+            }
+
+            a {
+                @include buttondefault;
+            }
+        }
+    }
+}
