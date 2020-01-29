@@ -15,7 +15,11 @@
                     text-transform: uppercase;
                     font-weight: 600;
                     font-family: $oswald;
-                    font-size: 1.7rem
+                    font-size: 1.7rem;
+
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
             .fa-bars {
@@ -162,6 +166,10 @@
         .blogRowTwo {
             @include flexrow;
             justify-content: space-between;
+
+            button {
+                text-align: right;
+            }
         }
 
         .blogImgOne,

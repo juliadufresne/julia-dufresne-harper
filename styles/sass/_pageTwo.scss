@@ -83,7 +83,10 @@
                     padding: 25px;
                     @include flexrow;
                     align-items: flex-start;
-                    border-bottom: 6px solid $duskblue;
+                    
+                    &:nth-child(3) {
+                        border-bottom: 6px solid $duskblue;
+                    }
                     
                     p,
                     time {

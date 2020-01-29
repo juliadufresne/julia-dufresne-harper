@@ -2,6 +2,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     
             .headerTitle {
                 position: relative;
@@ -26,7 +27,15 @@ nav {
             text-transform: uppercase;
             font-weight: 600;
             font-family: $oswald;
-            font-size: 1.7rem
+            font-size: 1.7rem;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        .title {
+            font-size: 3.4rem;
         }
     }
 }
