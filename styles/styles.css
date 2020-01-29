@@ -401,6 +401,44 @@ footer p {
   padding: 20px 0;
 }
 
+form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form div input {
+  width: calc(100% - 20px);
+  margin: 20px 0;
+  padding: 10px;
+}
+
+form div input:first-child {
+  margin-right: 10px;
+}
+
+form div input:last-child {
+  margin-left: 10px;
+}
+
+form .message {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 200px;
+  margin-bottom: 20px;
+}
+
+form button {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: #F38D8D;
+  padding: 12px 32px;
+}
+
 #pageOne .about {
   background-color: #F6F6F6;
 }
@@ -701,7 +739,7 @@ footer p {
 
 #pageTwo header h1 {
   position: relative;
-  top: 345px;
+  top: 355px;
   font-size: 6.4rem;
   padding-right: 10%;
   text-transform: uppercase;
@@ -776,36 +814,132 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#pageTwo main .blogSection h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+#pageTwo main .blogSection p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+#pageTwo main .blogSection li {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+#pageTwo main .blogSection time {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
 }
 
 #pageTwo main .blogSection .aboutHarper {
   width: calc(50% - 20px);
-  margin: 20px;
+  margin: 60px 20px;
 }
 
-#pageTwo main .blogSection .about {
+#pageTwo main .blogSection .aboutHarper .about {
   background-color: white;
-  padding: 20px;
+  padding: 25px;
 }
 
-#pageTwo main .blogSection .aboutImage img {
+#pageTwo main .blogSection .aboutHarper img {
   display: block;
   width: 100%;
 }
 
-#pageTwo main .blogSection .blogPosts {
-  width: 100%;
-}
-
-#pageTwo main .blogSection .recent {
+#pageTwo main .blogSection .aboutHarper .recent {
   margin-top: 20px;
   background-color: white;
-  padding: 20px;
+  padding: 25px;
 }
 
-#pageTwo .blogPosts {
-  width: calc(50% - 20px);
-  margin: 20px;
+#pageTwo main .blogPosts {
+  width: 100%;
+  margin: 60px 20px;
+}
+
+#pageTwo main .blogPosts .blog {
+  background-color: white;
+  padding: 25px;
+}
+
+#pageTwo main .blogPosts .comment {
+  margin-top: 20px;
+  background-color: white;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#pageTwo main form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#pageTwo main form div input {
+  width: calc(100% - 20px);
+  margin: 20px 0;
+  padding: 10px;
+}
+
+#pageTwo main form div input:first-child {
+  margin-right: 10px;
+}
+
+#pageTwo main form div input:last-child {
+  margin-left: 10px;
+}
+
+#pageTwo main form .message {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 200px;
+  margin-bottom: 20px;
+}
+
+#pageTwo main form button {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: #F38D8D;
+  padding: 12px 32px;
 }
 
 #pageThree header {
@@ -819,7 +953,7 @@ footer p {
 
 #pageThree header h1 {
   position: relative;
-  top: 345px;
+  top: 355px;
   font-size: 6.4rem;
   padding-right: 10%;
   text-transform: uppercase;

@@ -9,7 +9,7 @@
         
                 h1 {
                     position: relative;
-                    top: 345px;
+                    top: 355px;
                     font-size: 6.4rem;
                     padding-right: 10%;
                     text-transform: uppercase;
@@ -47,40 +47,99 @@
 
         .blogSection {
             @include flexcol;
+            align-items: flex-start;
+
+            h2 {
+                @include header;
+            }
+
+            p {
+                @include body;
+            }
+
+            li {
+                @include body;
+            }
+
+            time {
+                @include body;
+            }
 
             .aboutHarper {
                 width: calc(50% - 20px);
-                margin: 20px;
-            }
+                margin: 60px 20px;
 
-            .about {
-                background-color: white;
-                padding: 20px;
-            }
-
-            .aboutImage {
-
+                .about {
+                    background-color: white;
+                    padding: 25px;
+                }
+    
                 img {
                     display: block;
                     width: 100%;
                 }
+
+                .recent {
+                    margin-top: 20px;
+                    background-color: white;
+                    padding: 25px;
+                }
             }
+        }
+
 
             .blogPosts {
                 width: 100%;
+                margin: 60px 20px;
+
+                .blog {
+                    background-color: white;
+                    padding: 25px;
+                }
+        
+                .comment {
+                    margin-top: 20px;
+                    background-color: white;
+                    padding: 25px;
+                    @include flexrow;
+                    align-items: flex-start;
+                }
             }
 
-            .recent {
-                margin-top: 20px;
-                background-color: white;
-                padding: 20px;
+        form {
+            
+            div {
+                display: flex;
+
+                input {
+                    width: calc(100% - 20px);
+                    margin: 20px 0;
+                    padding: 10px;
+
+                    &:first-child {
+                        margin-right: 10px
+                    }
+
+                    &:last-child {
+                        margin-left: 10px
+                    }
+                }
+
+            }
+
+            .message {
+                width: 100%;
+                padding: 10px;
+                padding-bottom: 200px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                width: 100%;
+                @include buttondefault;
             }
         }
-    }
 
 
-    .blogPosts {
-        width: calc(50% - 20px);
-        margin: 20px;
     }
 }

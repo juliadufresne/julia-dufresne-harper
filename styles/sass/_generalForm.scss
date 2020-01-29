@@ -1,0 +1,33 @@
+form {
+            
+    div {
+        display: flex;
+
+        input {
+            width: calc(100% - 20px);
+            margin: 20px 0;
+            padding: 10px;
+
+            &:first-child {
+                margin-right: 10px
+            }
+
+            &:last-child {
+                margin-left: 10px
+            }
+        }
+
+    }
+
+    .message {
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 200px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+        @include buttondefault;
+    }
+}
