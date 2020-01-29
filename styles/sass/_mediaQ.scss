@@ -1,0 +1,248 @@
+@media (max-width: 1020px) {
+    #pageOne {
+        header {
+            .headerImage {
+                margin-right: 40px;
+                width: 40%;
+                min-width: 250px;
+            }
+            .headerText {
+                font-size: 5rem;
+                padding-right: 0;
+        
+                h1::after {
+                    content: "";
+                    background-image: url("../harper-assets/circle-text.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width:125px;
+                    height: 125px;
+                    display: block;
+                    position: absolute;
+                    top: -30%;
+                    right: -40px;
+                }
+            }
+        }
+
+        .about {
+            background-color: $white;
+        
+            div {
+                padding: 100px 0;
+                text-align: center;
+            }  
+        }
+
+        .aboutInfo {
+        
+            .banner {
+                height: 40vh;
+            }
+        
+            .rowOne,
+            .rowTwo {
+        
+                .aboutContent {
+                    padding: 20px 30px;
+                }
+        
+                .aboutContent:nth-child(2),
+                .aboutContent:nth-child(4) {
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        .blog {
+
+            .blogRowOne,
+            .blogRowTwo {
+                flex-direction: column;
+            }
+
+            .blogRowTwo {
+                flex-direction: column-reverse;
+            }
+        
+            .blogImgOne,
+            .blogImgTwo {
+                width: 80%;
+            }
+        
+            .blogTextOne,
+            .blogTextTwo {
+                width: 80%;
+                text-align: center;
+                padding: 30px 0;
+            }
+
+            .blogTextTwo {
+                padding-top: 80px
+            }
+
+            h3 {
+                @include header;
+                font-size: 2.4rem;
+            }
+        
+            p {
+                padding: 20px 0; 
+                @include body;
+            }
+        
+            button {
+                @include buttondefault;
+            }
+        }
+
+
+        .bio {
+
+            .bioContent {
+                padding: 80px 0;
+        
+                .bioImg {
+                    width: 40%;
+                }
+                
+                .bioText {
+                    width: 50%;
+                }
+            }
+        }
+        .gallery  {
+
+            padding: 0;
+            .wrapper {
+                width: 100%;
+            }
+
+            ul {
+                @include flexrow;
+        
+                li:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #pageOne {
+        header {
+
+            .headerContent {
+                flex-wrap: wrap;
+            }
+
+            .headerImage {
+                width: 35%;
+                min-width: 350px;
+                box-shadow: 20px 20px $white;
+                position: relative;
+            }
+
+            .headerImage::after {
+                content: "";
+                background-image: url("../harper-assets/circle-text.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 200px;
+                height: 200px;
+                display: block;
+                position: absolute;
+                top: -16%;
+                right: -102px;
+            }
+            
+            .headerText {
+                display: none; 
+        }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+
+                .menu {
+                    display: none;
+                }
+        
+                .fa-bars {
+                    padding: 12px 26px;
+                    display: inline-block !important;
+                    font-size: 3.4rem;
+                }
+            }
+        }
+
+        .aboutInfo {
+            width: 100%;
+
+            .banner {
+                height: 30vh;
+            }
+        
+            .rowOne,
+            .rowTwo {
+                flex-direction: column;
+                width: 100%;
+
+                .aboutContent {
+                    width: 80%;
+                    margin: 0 auto;
+                    padding-left: 50px;
+                }
+            }
+        }
+
+        .bio {
+        
+            .bioContent {
+                padding: 40px;
+                flex-direction: column;
+        
+                .bioImg {
+                    width: 80%;
+                }
+                
+                .bioText {
+                    padding-top: 60px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    #pageOne {
+        .wrapper {
+            width: 90%
+        }
+
+        header {
+            .headerImage {
+                width: 25%;
+                min-width: 250px;
+                box-shadow: 20px 20px $white;
+                position: relative;
+            }
+
+            .headerImage::after {
+                width: 120px;
+                height: 120px;
+                top: -15%;
+                right: -62px;
+            }
+        }
+
+        .bioText {
+            padding-top: 60px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

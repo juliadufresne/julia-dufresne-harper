@@ -305,7 +305,7 @@ header nav {
           align-items: center;
 }
 
-header ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,12 +321,16 @@ header ul {
           align-items: center;
 }
 
-header li {
+header nav ul li {
   padding: 12px 26px;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Oswald", sans-serif;
   font-size: 1.7rem;
+}
+
+header nav .fa-bars {
+  display: none;
 }
 
 header .title {
@@ -352,7 +356,6 @@ header .headerContent {
 }
 
 header .headerImage {
-  margin-top: 20px;
   margin-right: 80px;
   width: 35%;
   min-width: 350px;
@@ -386,16 +389,28 @@ header .headerText h1::after {
   right: -65px;
 }
 
-.about {
+footer {
+  background-color: #171717;
+  width: 100%;
+}
+
+footer p {
+  font-family: "Cabin", sans-serif;
+  color: #F6F6F6;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#pageOne .about {
   background-color: #F6F6F6;
 }
 
-.about div {
+#pageOne .about div {
   padding: 100px 0;
   padding-left: 35%;
 }
 
-.about h2 {
+#pageOne .about h2 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 3.4rem;
@@ -403,7 +418,7 @@ header .headerText h1::after {
   letter-spacing: 1.5px;
 }
 
-.about p {
+#pageOne .about p {
   padding: 20px 0;
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
@@ -412,7 +427,7 @@ header .headerText h1::after {
   letter-spacing: .5px;
 }
 
-.about a {
+#pageOne .about a {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -422,20 +437,21 @@ header .headerText h1::after {
   padding: 12px 32px;
 }
 
-.aboutInfo {
+#pageOne .aboutInfo {
   background-color: #F6F6F6;
 }
 
-.aboutInfo .banner {
+#pageOne .aboutInfo .banner {
   background-image: url("../harper-assets/home-image-2.jpg");
   width: 100%;
   height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.aboutInfo .rowOne,
-.aboutInfo .rowTwo {
+#pageOne .aboutInfo .rowOne,
+#pageOne .aboutInfo .rowTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,22 +460,22 @@ header .headerText h1::after {
           justify-content: space-between;
 }
 
-.aboutInfo .rowOne .aboutContent,
-.aboutInfo .rowTwo .aboutContent {
+#pageOne .aboutInfo .rowOne .aboutContent,
+#pageOne .aboutInfo .rowTwo .aboutContent {
   width: 50%;
   padding: 40px 100px;
   padding-right: 0;
 }
 
-.aboutInfo .rowOne .aboutContent:nth-child(2),
-.aboutInfo .rowOne .aboutContent:nth-child(4),
-.aboutInfo .rowTwo .aboutContent:nth-child(2),
-.aboutInfo .rowTwo .aboutContent:nth-child(4) {
+#pageOne .aboutInfo .rowOne .aboutContent:nth-child(2),
+#pageOne .aboutInfo .rowOne .aboutContent:nth-child(4),
+#pageOne .aboutInfo .rowTwo .aboutContent:nth-child(2),
+#pageOne .aboutInfo .rowTwo .aboutContent:nth-child(4) {
   padding-right: 20px;
 }
 
-.aboutInfo .rowOne p,
-.aboutInfo .rowTwo p {
+#pageOne .aboutInfo .rowOne p,
+#pageOne .aboutInfo .rowTwo p {
   padding-top: 20px;
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
@@ -468,8 +484,8 @@ header .headerText h1::after {
   letter-spacing: .5px;
 }
 
-.aboutInfo .rowOne .aboutTitle,
-.aboutInfo .rowTwo .aboutTitle {
+#pageOne .aboutInfo .rowOne .aboutTitle,
+#pageOne .aboutInfo .rowTwo .aboutTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,8 +505,8 @@ header .headerText h1::after {
           justify-content: flex-start;
 }
 
-.aboutInfo .rowOne .aboutTitle i,
-.aboutInfo .rowTwo .aboutTitle i {
+#pageOne .aboutInfo .rowOne .aboutTitle i,
+#pageOne .aboutInfo .rowTwo .aboutTitle i {
   position: absolute;
   left: -60px;
   background-color: #b2dfe8;
@@ -499,8 +515,8 @@ header .headerText h1::after {
   font-size: 2rem;
 }
 
-.aboutInfo .rowOne .aboutTitle h3,
-.aboutInfo .rowTwo .aboutTitle h3 {
+#pageOne .aboutInfo .rowOne .aboutTitle h3,
+#pageOne .aboutInfo .rowTwo .aboutTitle h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 3.4rem;
@@ -509,16 +525,16 @@ header .headerText h1::after {
   font-size: 2.4rem;
 }
 
-.aboutInfo .rowOne {
+#pageOne .aboutInfo .rowOne {
   padding-top: 60px;
 }
 
-.aboutInfo .rowTwo {
+#pageOne .aboutInfo .rowTwo {
   padding-bottom: 60px;
 }
 
-.blog .blogRowOne,
-.blog .blogRowTwo {
+#pageOne .blog .blogRowOne,
+#pageOne .blog .blogRowTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,36 +553,31 @@ header .headerText h1::after {
           justify-content: space-between;
 }
 
-.blog .blogImgOne,
-.blog .blogImgTwo {
+#pageOne .blog .blogImgOne,
+#pageOne .blog .blogImgTwo {
   width: 50%;
 }
 
-.blog .blogImgOne {
+#pageOne .blog .blogImgOne {
   position: relative;
   bottom: 40px;
   -webkit-box-shadow: 20px 20px #68B0C1, -200px 20px #68B0C1;
           box-shadow: 20px 20px #68B0C1, -200px 20px #68B0C1;
 }
 
-.blog .blogImgTwo {
+#pageOne .blog .blogImgTwo {
   position: relative;
-  bottom: 40px;
+  top: 40px;
   -webkit-box-shadow: 20px 20px #b2dfe8, 200px 20px #b2dfe8;
           box-shadow: 20px 20px #b2dfe8, 200px 20px #b2dfe8;
 }
 
-.blog .blogImgTwo {
-  position: relative;
-  top: 40px;
-}
-
-.blog .blogTextOne,
-.blog .blogTextTwo {
+#pageOne .blog .blogTextOne,
+#pageOne .blog .blogTextTwo {
   width: 40%;
 }
 
-.blog h3 {
+#pageOne .blog h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 3.4rem;
@@ -575,7 +586,7 @@ header .headerText h1::after {
   font-size: 2.4rem;
 }
 
-.blog p {
+#pageOne .blog p {
   padding: 20px 0;
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
@@ -584,7 +595,7 @@ header .headerText h1::after {
   letter-spacing: .5px;
 }
 
-.blog button {
+#pageOne .blog button {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -594,11 +605,11 @@ header .headerText h1::after {
   padding: 12px 32px;
 }
 
-.bio {
+#pageOne .bio {
   background-color: #F6F6F6;
 }
 
-.bio .bioContent {
+#pageOne .bio .bioContent {
   padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,17 +629,17 @@ header .headerText h1::after {
           justify-content: space-between;
 }
 
-.bio .bioContent .bioImg {
+#pageOne .bio .bioContent .bioImg {
   width: 25%;
   -webkit-box-shadow: 20px 20px #227284;
           box-shadow: 20px 20px #227284;
 }
 
-.bio .bioContent .bioText {
+#pageOne .bio .bioContent .bioText {
   width: 65%;
 }
 
-.bio .bioContent .bioText h3 {
+#pageOne .bio .bioContent .bioText h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 3.4rem;
@@ -636,7 +647,7 @@ header .headerText h1::after {
   letter-spacing: 1.5px;
 }
 
-.bio .bioContent .bioText p {
+#pageOne .bio .bioContent .bioText p {
   padding: 30px 0;
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
@@ -645,7 +656,7 @@ header .headerText h1::after {
   letter-spacing: .5px;
 }
 
-.bio .bioContent .bioText a {
+#pageOne .bio .bioContent .bioText a {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -655,11 +666,11 @@ header .headerText h1::after {
   padding: 12px 32px;
 }
 
-.gallery {
+#pageOne .gallery {
   padding: 80px 0;
 }
 
-.gallery ul {
+#pageOne .gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,18 +686,424 @@ header .headerText h1::after {
           align-items: center;
 }
 
-.gallery ul li:nth-child(2) {
+#pageOne .gallery ul li:nth-child(2) {
   margin: 0 40px;
 }
 
-footer {
-  background-color: #171717;
+#pageTwo header {
+  background-image: url("../harper-assets/blog-image-1.jpg");
+  width: 100%;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#pageTwo header h1 {
+  position: relative;
+  top: 345px;
+  font-size: 6.4rem;
+  padding-right: 10%;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+#pageTwo nav {
+  background-color: #b2dfe8;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pageTwo nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pageTwo nav ul li {
+  padding: 12px 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+}
+
+#pageTwo nav .title {
+  font-size: 3.4rem;
+}
+
+#pageTwo nav .fa-bars {
+  display: none;
+}
+
+#pageTwo main {
+  background-color: #F6F6F6;
+}
+
+#pageTwo main .blogSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pageTwo main .blogSection .aboutHarper {
+  width: calc(50% - 20px);
+  margin: 20px;
+}
+
+#pageTwo main .blogSection .about {
+  background-color: white;
+  padding: 20px;
+}
+
+#pageTwo main .blogSection .aboutImage img {
+  display: block;
   width: 100%;
 }
 
-footer p {
-  font-family: "Cabin", sans-serif;
-  color: #F6F6F6;
-  text-align: center;
-  padding: 20px 0;
+#pageTwo main .blogSection .blogPosts {
+  width: 100%;
+}
+
+#pageTwo main .blogSection .recent {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+}
+
+#pageTwo .blogPosts {
+  width: calc(50% - 20px);
+  margin: 20px;
+}
+
+#pageThree header {
+  background-image: url("../harper-assets/contact-image-1.jpg");
+  width: 100%;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#pageThree header h1 {
+  position: relative;
+  top: 345px;
+  font-size: 6.4rem;
+  padding-right: 10%;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+#pageThree nav {
+  background-color: #b2dfe8;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pageThree nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pageThree nav ul li {
+  padding: 12px 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+}
+
+#pageThree nav .title {
+  font-size: 3.4rem;
+}
+
+#pageThree nav .fa-bars {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  #pageOne header .headerImage {
+    margin-right: 40px;
+    width: 40%;
+    min-width: 250px;
+  }
+  #pageOne header .headerText {
+    font-size: 5rem;
+    padding-right: 0;
+  }
+  #pageOne header .headerText h1::after {
+    content: "";
+    background-image: url("../harper-assets/circle-text.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 125px;
+    height: 125px;
+    display: block;
+    position: absolute;
+    top: -30%;
+    right: -40px;
+  }
+  #pageOne .about {
+    background-color: #F6F6F6;
+  }
+  #pageOne .about div {
+    padding: 100px 0;
+    text-align: center;
+  }
+  #pageOne .aboutInfo .banner {
+    height: 40vh;
+  }
+  #pageOne .aboutInfo .rowOne .aboutContent,
+  #pageOne .aboutInfo .rowTwo .aboutContent {
+    padding: 20px 30px;
+  }
+  #pageOne .aboutInfo .rowOne .aboutContent:nth-child(2),
+  #pageOne .aboutInfo .rowOne .aboutContent:nth-child(4),
+  #pageOne .aboutInfo .rowTwo .aboutContent:nth-child(2),
+  #pageOne .aboutInfo .rowTwo .aboutContent:nth-child(4) {
+    padding-right: 30px;
+  }
+  #pageOne .blog .blogRowOne,
+  #pageOne .blog .blogRowTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pageOne .blog .blogRowTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #pageOne .blog .blogImgOne,
+  #pageOne .blog .blogImgTwo {
+    width: 80%;
+  }
+  #pageOne .blog .blogTextOne,
+  #pageOne .blog .blogTextTwo {
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  #pageOne .blog .blogTextTwo {
+    padding-top: 80px;
+  }
+  #pageOne .blog h3 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 2.4rem;
+  }
+  #pageOne .blog p {
+    padding: 20px 0;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: .5px;
+  }
+  #pageOne .blog button {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background-color: #F38D8D;
+    padding: 12px 32px;
+  }
+  #pageOne .bio .bioContent {
+    padding: 80px 0;
+  }
+  #pageOne .bio .bioContent .bioImg {
+    width: 40%;
+  }
+  #pageOne .bio .bioContent .bioText {
+    width: 50%;
+  }
+  #pageOne .gallery {
+    padding: 0;
+  }
+  #pageOne .gallery .wrapper {
+    width: 100%;
+  }
+  #pageOne .gallery ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #pageOne .gallery ul li:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #pageOne header .headerContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #pageOne header .headerImage {
+    width: 35%;
+    min-width: 350px;
+    -webkit-box-shadow: 20px 20px #F6F6F6;
+            box-shadow: 20px 20px #F6F6F6;
+    position: relative;
+  }
+  #pageOne header .headerImage::after {
+    content: "";
+    background-image: url("../harper-assets/circle-text.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: -16%;
+    right: -102px;
+  }
+  #pageOne header .headerText {
+    display: none;
+  }
+  #pageOne header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #pageOne header nav .menu {
+    display: none;
+  }
+  #pageOne header nav .fa-bars {
+    padding: 12px 26px;
+    display: inline-block !important;
+    font-size: 3.4rem;
+  }
+  #pageOne .aboutInfo {
+    width: 100%;
+  }
+  #pageOne .aboutInfo .banner {
+    height: 30vh;
+  }
+  #pageOne .aboutInfo .rowOne,
+  #pageOne .aboutInfo .rowTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #pageOne .aboutInfo .rowOne .aboutContent,
+  #pageOne .aboutInfo .rowTwo .aboutContent {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 50px;
+  }
+  #pageOne .bio .bioContent {
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pageOne .bio .bioContent .bioImg {
+    width: 80%;
+  }
+  #pageOne .bio .bioContent .bioText {
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  #pageOne .wrapper {
+    width: 90%;
+  }
+  #pageOne header .headerImage {
+    width: 25%;
+    min-width: 250px;
+    -webkit-box-shadow: 20px 20px #F6F6F6;
+            box-shadow: 20px 20px #F6F6F6;
+    position: relative;
+  }
+  #pageOne header .headerImage::after {
+    width: 120px;
+    height: 120px;
+    top: -15%;
+    right: -62px;
+  }
+  #pageOne .bioText {
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+  }
 }

@@ -1,0 +1,184 @@
+#pageOne {
+
+    .about {
+        background-color: $white;
+
+        div {
+            padding: 100px 0;
+            padding-left: 35%
+        }
+
+        h2 {
+            @include header;
+        }
+
+        p {
+            padding: 20px 0;
+            @include body;
+        }
+
+        a {
+            @include buttondefault;
+        }
+
+    }
+
+
+
+    .aboutInfo {
+        background-color: $white;
+
+        .banner {
+            background-image: url("../harper-assets/home-image-2.jpg");
+            width: 100%;
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .rowOne,
+        .rowTwo {
+            display: flex;
+            justify-content: space-between;
+
+            .aboutContent {
+                width: 50%;
+                padding: 40px 100px;
+                padding-right: 0;
+            }
+
+            .aboutContent:nth-child(2),
+            .aboutContent:nth-child(4) {
+                padding-right: 20px;
+            }
+
+            p {
+                padding-top: 20px;
+                @include body;
+            }
+
+            .aboutTitle {
+                @include flexcol;
+                position: relative;
+                justify-content: flex-start;
+
+                i {
+                    position: absolute;
+                    left: -60px;
+                    background-color: $lightbluegrey;
+                    padding: 15px;
+                    border-radius: 100%;
+                    font-size: 2rem;
+                }
+
+                h3 {
+                    @include header;
+                    font-size: 2.4rem
+                }
+            }
+        }
+
+        .rowOne {
+            padding-top: 60px;
+        }
+        
+        .rowTwo {
+            padding-bottom: 60px;
+        }
+    }
+
+
+
+    .blog {
+
+        .blogRowOne,
+        .blogRowTwo {
+            @include flexrow;
+            justify-content: space-between;
+        }
+
+        .blogImgOne,
+        .blogImgTwo {
+            width: 50%;
+        }
+
+        .blogImgOne {
+            position: relative;
+            bottom: 40px;
+            box-shadow: 20px 20px $greyblue, -200px 20px $greyblue;
+        }
+
+        .blogImgTwo {
+            position: relative;
+            top: 40px;
+            box-shadow: 20px 20px $lightbluegrey, 200px 20px $lightbluegrey;
+        }
+
+        .blogTextOne,
+        .blogTextTwo {
+            width: 40%;
+        }
+
+        h3 {
+            @include header;
+            font-size: 2.4rem;
+        }
+
+        p {
+            padding: 20px 0; 
+            @include body;
+        }
+
+        button {
+            @include buttondefault;
+        }
+    }
+
+
+    .bio {
+        background-color: $white;
+
+        .bioContent {
+            padding: 100px 0;
+            @include flexrow;
+            justify-content: space-between;
+
+            .bioImg {
+                width: 25%;
+                box-shadow: 20px 20px $duskblue;
+            }
+            
+            .bioText {
+                width: 65%;
+
+                h3 {
+                    @include header;
+                }
+
+                p {
+                    padding: 30px 0;
+                    @include body;
+                }
+
+                a {
+                    @include buttondefault;
+                }
+            }
+        }
+    }
+
+
+
+    .gallery {
+        padding: 80px 0;
+
+        ul {
+            @include flexrow;
+
+            li:nth-child(2) {
+                margin: 0 40px; 
+            }
+        }
+    }
+}

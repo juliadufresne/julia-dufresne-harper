@@ -1,0 +1,86 @@
+#pageTwo {
+    header {
+        background-image: url("../harper-assets/blog-image-1.jpg");
+        width: 100%;
+        height: 55vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+                h1 {
+                    position: relative;
+                    top: 345px;
+                    font-size: 6.4rem;
+                    padding-right: 10%;
+                    text-transform: uppercase;
+                    font-family: $oswald;
+                }
+    }
+
+    nav {
+        background-color: $lightbluegrey;
+        height: 10vh;
+        @include flexrow;
+
+        ul {
+            @include flexrow;
+
+            li {
+                padding: 12px 26px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-family: $oswald;
+                font-size: 1.7rem
+            }
+        }
+
+        .title {
+            font-size: 3.4rem;
+        }
+        .fa-bars {
+            display: none;
+        }
+    }
+
+    main {
+        background-color: $white;
+
+        .blogSection {
+            @include flexcol;
+
+            .aboutHarper {
+                width: calc(50% - 20px);
+                margin: 20px;
+            }
+
+            .about {
+                background-color: white;
+                padding: 20px;
+            }
+
+            .aboutImage {
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .blogPosts {
+                width: 100%;
+            }
+
+            .recent {
+                margin-top: 20px;
+                background-color: white;
+                padding: 20px;
+            }
+        }
+    }
+
+
+    .blogPosts {
+        width: calc(50% - 20px);
+        margin: 20px;
+    }
+}
