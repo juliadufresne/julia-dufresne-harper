@@ -290,7 +290,7 @@ header {
   background-position: center;
 }
 
-header h1 {
+header .headerTitle {
   position: relative;
   top: 355px;
   font-size: 6.4rem;
@@ -339,6 +339,10 @@ nav ul li {
   font-weight: 600;
   font-family: "Oswald", sans-serif;
   font-size: 1.7rem;
+}
+
+.fa-bars {
+  display: none;
 }
 
 footer {
@@ -991,7 +995,8 @@ form button {
 #pageThree main .contact {
   margin: 80px 0;
   background-color: white;
-  width: 30%;
+  width: 40%;
+  min-width: 280px;
   padding: 40px;
 }
 
@@ -1023,6 +1028,7 @@ form button {
 #pageThree main form {
   width: 100%;
   margin: 60px;
+  min-width: 425px;
 }
 
 @media (max-width: 1020px) {
@@ -1403,5 +1409,80 @@ form button {
   #pageTwo main .blogPosts .comment time {
     color: #227284;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 980px) {
+  #pageThree main div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pageThree main .contact {
+    width: 100%;
+    text-align: center;
+  }
+  #pageThree main ul {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #pageThree main ul li {
+    padding-right: 0;
+    padding: 20px;
+  }
+  #pageThree main form {
+    margin: 0;
+    min-width: 200px;
+  }
+  #pageThree main form input:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+  #pageThree main form input:last-child {
+    width: 100%;
+    margin-left: 0;
+  }
+  #pageThree main form button {
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background-color: #F38D8D;
+    padding: 12px 32px;
+    margin-bottom: 40px;
+  }
+  #pageThree main form .message {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #pageThree nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #pageThree nav .menu {
+    display: none;
+  }
+  #pageThree nav .fa-bars {
+    padding: 12px 26px;
+    display: inline-block !important;
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  header .headerTitle {
+    font-size: 4.6rem;
+    top: 365px;
   }
 }
