@@ -6,7 +6,8 @@ form {
         input {
             width: calc(100% - 20px);
             margin: 20px 0;
-            padding: 10px;
+            padding: 20px;
+            border: none;
 
             &:first-child {
                 margin-right: 10px
@@ -21,9 +22,10 @@ form {
 
     .message {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         padding-bottom: 200px;
         margin-bottom: 20px;
+        border: none;
     }
 
     button {

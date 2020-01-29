@@ -285,10 +285,22 @@ button {
 }
 
 header {
-  background-color: #b2dfe8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-header nav {
+header h1 {
+  position: relative;
+  top: 355px;
+  font-size: 6.4rem;
+  padding-right: 10%;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+nav {
+  background-color: #b2dfe8;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,7 +317,7 @@ header nav {
           align-items: center;
 }
 
-header nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,72 +333,12 @@ header nav ul {
           align-items: center;
 }
 
-header nav ul li {
+nav ul li {
   padding: 12px 26px;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Oswald", sans-serif;
   font-size: 1.7rem;
-}
-
-header nav .fa-bars {
-  display: none;
-}
-
-header .title {
-  font-size: 3.4rem;
-}
-
-header .headerContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-header .headerImage {
-  margin-right: 80px;
-  width: 35%;
-  min-width: 350px;
-  -webkit-box-shadow: 20px 20px #F6F6F6;
-          box-shadow: 20px 20px #F6F6F6;
-  position: relative;
-  top: 30px;
-}
-
-header .headerText {
-  font-size: 7rem;
-  padding-right: 10%;
-  position: relative;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-}
-
-header .headerText h1 {
-  position: relative;
-}
-
-header .headerText h1::after {
-  content: "";
-  background-image: url("../harper-assets/circle-text.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  display: block;
-  position: absolute;
-  top: -30%;
-  right: -65px;
 }
 
 footer {
@@ -410,7 +362,8 @@ form div {
 form div input {
   width: calc(100% - 20px);
   margin: 20px 0;
-  padding: 10px;
+  padding: 20px;
+  border: none;
 }
 
 form div input:first-child {
@@ -423,9 +376,10 @@ form div input:last-child {
 
 form .message {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   padding-bottom: 200px;
   margin-bottom: 20px;
+  border: none;
 }
 
 form button {
@@ -437,6 +391,111 @@ form button {
   letter-spacing: 1.5px;
   background-color: #F38D8D;
   padding: 12px 32px;
+}
+
+#pageOne header {
+  background-color: #b2dfe8;
+}
+
+#pageOne header nav {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pageOne header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pageOne header nav ul li {
+  padding: 12px 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+}
+
+#pageOne header nav .fa-bars {
+  display: none;
+}
+
+#pageOne header .title {
+  font-size: 3.4rem;
+}
+
+#pageOne header .headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#pageOne header .headerImage {
+  margin-right: 80px;
+  width: 35%;
+  min-width: 350px;
+  -webkit-box-shadow: 20px 20px #F6F6F6;
+          box-shadow: 20px 20px #F6F6F6;
+  position: relative;
+  top: 30px;
+}
+
+#pageOne header .headerText {
+  font-size: 7rem;
+  padding-right: 10%;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+#pageOne header .headerText h1 {
+  position: relative;
+}
+
+#pageOne header .headerText h1::after {
+  content: "";
+  background-image: url("../harper-assets/circle-text.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  top: -30%;
+  right: -65px;
 }
 
 #pageOne .about {
@@ -732,68 +791,6 @@ form button {
   background-image: url("../harper-assets/blog-image-1.jpg");
   width: 100%;
   height: 55vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#pageTwo header h1 {
-  position: relative;
-  top: 355px;
-  font-size: 6.4rem;
-  padding-right: 10%;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-}
-
-#pageTwo nav {
-  background-color: #b2dfe8;
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#pageTwo nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#pageTwo nav ul li {
-  padding: 12px 26px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.7rem;
-}
-
-#pageTwo nav .title {
-  font-size: 3.4rem;
-}
-
-#pageTwo nav .fa-bars {
-  display: none;
 }
 
 #pageTwo main {
@@ -931,112 +928,101 @@ form button {
   padding-top: 5px;
 }
 
-#pageTwo main form div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#pageTwo main form div input {
-  width: calc(100% - 20px);
-  margin: 20px 0;
-  padding: 20px;
-  border: none;
-}
-
-#pageTwo main form div input:first-child {
-  margin-right: 10px;
-}
-
-#pageTwo main form div input:last-child {
-  margin-left: 10px;
-}
-
-#pageTwo main form .message {
-  width: 100%;
-  padding: 20px;
-  padding-bottom: 200px;
-  margin-bottom: 20px;
-  border: none;
-}
-
-#pageTwo main form button {
-  width: 100%;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  background-color: #F38D8D;
-  padding: 12px 32px;
-}
-
 #pageThree header {
   background-image: url("../harper-assets/contact-image-1.jpg");
   width: 100%;
   height: 55vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-#pageThree header h1 {
-  position: relative;
-  top: 355px;
-  font-size: 6.4rem;
-  padding-right: 10%;
-  text-transform: uppercase;
+#pageThree main {
+  background-color: #F6F6F6;
+}
+
+#pageThree main h3 {
   font-family: "Oswald", sans-serif;
-}
-
-#pageThree nav {
-  background-color: #b2dfe8;
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#pageThree nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#pageThree nav ul li {
-  padding: 12px 26px;
   text-transform: uppercase;
-  font-weight: 600;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.7rem;
-}
-
-#pageThree nav .title {
   font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 2rem;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  padding: 20px 0;
 }
 
-#pageThree nav .fa-bars {
-  display: none;
+#pageThree main p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+#pageThree main li {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+#pageThree main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#pageThree main .contact {
+  margin: 80px 0;
+  background-color: white;
+  width: 30%;
+  padding: 40px;
+}
+
+#pageThree main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#pageThree main ul li {
+  font-size: 2.2rem;
+  color: #227284;
+  padding-right: 28px;
+}
+
+#pageThree main form {
+  width: 100%;
+  margin: 60px;
 }
 
 @media (max-width: 1020px) {

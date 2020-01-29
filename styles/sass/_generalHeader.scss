@@ -1,65 +1,35 @@
 header {
-    background-color: $lightbluegrey;
-
-    nav {
-        height: 10vh;
-        @include flexrow;
-
-        ul {
-            @include flexrow;
-
-            li {
-                padding: 12px 26px;
+    // background-image: url("../harper-assets/blog-image-1.jpg");
+    // width: 100%;
+    // height: 55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+            h1 {
+                position: relative;
+                top: 355px;
+                font-size: 6.4rem;
+                padding-right: 10%;
                 text-transform: uppercase;
-                font-weight: 600;
                 font-family: $oswald;
-                font-size: 1.7rem
             }
-        }
-        .fa-bars {
-            display: none;
-        }
-    }
+}
 
-    .title {
-        font-size: 3.4rem;
-    }
+nav {
+    background-color: $lightbluegrey;
+    height: 10vh;
+    @include flexrow;
 
-    .headerContent {
+    ul {
         @include flexrow;
-        justify-content: space-around;
-    }
 
-    .headerImage {
-        margin-right: 80px;
-        width: 35%;
-        min-width: 350px;
-        box-shadow: 20px 20px $white;
-        position: relative;
-        top: 30px;
-    }
-
-    .headerText {
-        font-size: 7rem;
-        padding-right: 10%;
-        position: relative;
-        text-transform: uppercase;
-        font-family: $oswald;
-
-        h1 {
-            position: relative;
-        }
-
-        h1::after {
-            content: "";
-            background-image: url("../harper-assets/circle-text.png");
-            background-repeat: no-repeat;
-            width:200px;
-            height: 200px;
-            display: block;
-            position: absolute;
-            top: -30%;
-            right: -65px;
+        li {
+            padding: 12px 26px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: $oswald;
+            font-size: 1.7rem
         }
     }
 }

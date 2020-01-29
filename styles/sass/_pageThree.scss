@@ -3,43 +3,93 @@
         background-image: url("../harper-assets/contact-image-1.jpg");
         width: 100%;
         height: 55vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        
-            h1 {
-                position: relative;
-                top: 355px;
-                font-size: 6.4rem;
-                padding-right: 10%;
-                text-transform: uppercase;
-                font-family: $oswald;
-            }
     }
+    //     width: 100%;
+    //     height: 55vh;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: center;
+        
+    //         h1 {
+    //             position: relative;
+    //             top: 355px;
+    //             font-size: 6.4rem;
+    //             padding-right: 10%;
+    //             text-transform: uppercase;
+    //             font-family: $oswald;
+    //         }
+    // }
 
-    nav {
-        background-color: $lightbluegrey;
-        height: 10vh;
-        @include flexrow;
+    // nav {
+    //     background-color: $lightbluegrey;
+    //     height: 10vh;
+    //     @include flexrow;
+
+    //     ul {
+    //         @include flexrow;
+
+    //         li {
+    //             padding: 12px 26px;
+    //             text-transform: uppercase;
+    //             font-weight: 600;
+    //             font-family: $oswald;
+    //             font-size: 1.7rem
+    //         }
+    //     }
+
+    //     .title {
+    //         font-size: 3.4rem;
+    //     }
+    //     .fa-bars {
+    //         display: none;
+    //     }
+    // }
+
+    main {
+        background-color: $white;
+
+        h3 {
+            @include header;
+            font-size: 2rem;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+            padding: 20px 0;
+        }
+
+        p {
+            @include body;
+        }
+
+        li {
+            @include body;
+        }
+
+        div {
+            @include flexrow; 
+            align-items: flex-start;      
+            justify-content: space-between;
+        }
+
+        .contact {
+            margin: 80px 0;
+            background-color: white;
+            width: 30%;
+            padding: 40px
+        }
 
         ul {
             @include flexrow;
-
+            justify-content: flex-start;
             li {
-                padding: 12px 26px;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-family: $oswald;
-                font-size: 1.7rem
+                font-size: 2.2rem;
+                color: $duskblue;
+                padding-right: 28px;
             }
         }
 
-        .title {
-            font-size: 3.4rem;
-        }
-        .fa-bars {
-            display: none;
-        }
+    form {
+        width: 100%;
+        margin: 60px;
     }
-
+    }
 }
