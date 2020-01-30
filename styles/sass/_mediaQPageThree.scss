@@ -1,5 +1,8 @@
 @media (max-width: 980px) {
     #pageThree {
+
+
+        // MAIN
         main {
             div {
                 flex-direction: column;
@@ -12,40 +15,42 @@
             ul {
                 width: 100%;
                 justify-content: center;
-
-                li {
-                    padding-right: 0;
-                    padding: 20px;
-                }
             }
-                form {
-                    margin: 0;
-                    min-width: 200px;
-            
-                    input {
-                        &:first-child {
-                            width: 100%;
-                            margin-right: 0;
-                        }
-            
-                        &:last-child {
-                            width: 100%;
-                            margin-left: 0;
-                        }
-                    }
-                    button {
+
+            li {
+                padding-right: 0;
+                padding: 20px;
+            }
+
+            form {
+                margin: 0;
+                min-width: 200px;
+
+                input {
+                    &:first-child {
                         width: 100%;
-                        @include buttondefault;
-                        margin-bottom: 40px;
+                        margin-right: 0;
                     }
 
-                    .message {
-                        margin-top: 20px;
+                    &:last-child {
+                        width: 100%;
+                        margin-left: 0;
                     }
+                }
+
+                button {
+                    width: 100%;
+                    @include buttondefault;
+                    margin-bottom: 40px;
+                }
+
+                .message {
+                    margin-top: 20px;
                 }
             }
         }
     }
+}
 
 
 

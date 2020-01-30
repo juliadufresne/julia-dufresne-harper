@@ -1,45 +1,48 @@
 @media (max-width: 1020px) {
     #pageTwo {
 
+
+        // MAIN
         main {
             margin: 0 auto;
+        }
 
-            .blogSection {
-                display: flex;
-                flex-direction: column;
+        .blogSection {
+            display: flex;
+            flex-direction: column;
+        }
 
-                .aboutHarper {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    width: 100%;
-                    margin: 60px 0px;
+        .aboutHarper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 100%;
+            margin: 60px 0px;
+        }
 
-                    .about {
-                        width: 100%;
-                        @include flexrow;
-                        align-items: flex-end;
+        .about {
+            width: 100%;
+            @include flexrow;
+            align-items: flex-end;
 
-                        img {
-                            padding-right: 20px;
-                            padding-bottom: 0;
-                        }
-
-                        h2 {
-                            font-size: 3rem;
-                        }
-                    }
-                }
+            img {
+                padding-right: 20px;
+                padding-bottom: 0;
             }
 
-            .blogPosts {
-                margin: 20px 0;
+            h2 {
+                font-size: 3rem;
             }
+        }
+            
 
-            form {
-                button {
-                    margin-bottom: 40px;
-                }
+        .blogPosts {
+            margin: 20px 0;
+        }
+
+        form {
+            button {
+                margin-bottom: 40px;
             }
         }
     }
@@ -48,6 +51,9 @@
 
 @media (max-width: 768px) {
     #pageTwo {
+
+
+        // NAV
         nav {
             display: flex;
             justify-content: space-between;
@@ -63,7 +69,7 @@
             }
         }
 
-
+        // MAIN
         main {
             .blogPosts {
                 margin: 0;
@@ -75,51 +81,51 @@
 @media (max-width: 640px){
     #pageTwo {
 
-        main {
-            .blogSection {
-                .aboutHarper {
-                    .about {
-                        h2 {
-                            font-size: 2.4rem;
-                            padding-bottom: 0;
-                        }
+        // ABOUT
+        .aboutHarper {
+            .about {
+                h2 {
+                    font-size: 2.4rem;
+                    padding-bottom: 0;
+                }
 
-                        p {
-                            font-size: 1.4rem;
-                            line-height: 20px;
-                        }
-                    }
+                p {
+                    font-size: 1.4rem;
+                    line-height: 20px;
                 }
             }
-            .blogPosts {
-                .comment {
-                    time {
-                        color: $duskblue;
-                        font-size: 1.4rem;
-                        
-                    }
+        }
+
+        // BLOG POSTS
+        .blogPosts {
+            .comment {
+                time {
+                    color: $duskblue;
+                    font-size: 1.4rem;
+                    
                 }
             }
+        }
 
-            form {
+        // FORM
+        form {
 
-                div{
-                    flex-direction: column;
+            div{
+                flex-direction: column;
 
-                    input {
-                        width: 100%;
-                        margin: 20px 0;
-                        padding: 20px;
-                        border: none;
-    
-                        &:first-child {
-                            margin-right: 0px;
-                            margin-bottom: 0px;
-                        }
-    
-                        &:last-child {
-                            margin-left: 0px
-                        }
+                input {
+                    width: 100%;
+                    margin: 20px 0;
+                    padding: 20px;
+                    border: none;
+
+                    &:first-child {
+                        margin-right: 0px;
+                        margin-bottom: 0px;
+                    }
+
+                    &:last-child {
+                        margin-left: 0px
                     }
                 }
             }
@@ -131,31 +137,30 @@
 @media (max-width: 454px) {
         #pageTwo {
 
-        main {
-            .blogSection{
-                .aboutHarper {
-                    .about{
-                        display: flex;
-                        flex-direction: column;
-                        margin: 0 auto;
+            // ABOUT
+            .aboutHarper {
+                .about{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
 
-                        img {
-                            padding-right: 0;
-                        }
-                        h2 {
-                            font-size: 2.4rem;
-                            padding: 20px 0;
-                        }
+                    img {
+                        padding-right: 0;
+                    }
+                    h2 {
+                        font-size: 2.4rem;
+                        padding: 20px 0;
+                    }
 
-                        p {
-                            padding: 0;
-                            font-size: 1.4rem;
-                            line-height: 20px;
-                        }
+                    p {
+                        padding: 0;
+                        font-size: 1.4rem;
+                        line-height: 20px;
                     }
                 }
             }
 
+            // BLOG POSTS
             .blogPosts {
                 .comment {
                     div {
@@ -173,4 +178,3 @@
             }
         }
     }
-}

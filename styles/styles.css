@@ -811,7 +811,7 @@ form button {
   background-color: #F6F6F6;
 }
 
-#pageTwo main .blogSection {
+#pageTwo .blogSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,7 +830,7 @@ form button {
           align-items: flex-start;
 }
 
-#pageTwo main .blogSection h2 {
+#pageTwo .blogSection h2 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 3.4rem;
@@ -839,7 +839,7 @@ form button {
   padding-bottom: 20px;
 }
 
-#pageTwo main .blogSection p {
+#pageTwo .blogSection p {
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
@@ -848,7 +848,7 @@ form button {
   padding: 10px 0;
 }
 
-#pageTwo main .blogSection li {
+#pageTwo .blogSection li {
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
@@ -856,7 +856,7 @@ form button {
   letter-spacing: .5px;
 }
 
-#pageTwo main .blogSection time {
+#pageTwo .blogSection time {
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
@@ -864,53 +864,53 @@ form button {
   letter-spacing: .5px;
 }
 
-#pageTwo main .blogSection .aboutHarper {
+#pageTwo .aboutHarper {
   width: calc(50% - 20px);
   margin: 60px 20px;
 }
 
-#pageTwo main .blogSection .aboutHarper .about {
+#pageTwo .aboutHarper .about {
   background-color: white;
   padding: 25px;
 }
 
-#pageTwo main .blogSection .aboutHarper h2 {
+#pageTwo .aboutHarper h2 {
   font-size: 2.4rem;
 }
 
-#pageTwo main .blogSection .aboutHarper img {
+#pageTwo .aboutHarper img {
   display: block;
   width: 100%;
   padding-bottom: 20px;
   min-width: 140px;
 }
 
-#pageTwo main .blogSection .aboutHarper a {
+#pageTwo .aboutHarper a {
   color: #227284;
 }
 
-#pageTwo main .blogSection .aboutHarper .recent {
+#pageTwo .aboutHarper .recent {
   margin-top: 20px;
   background-color: white;
   padding: 25px;
 }
 
-#pageTwo main .blogSection .aboutHarper .recent li {
+#pageTwo .aboutHarper .recent li {
   list-style: inside;
 }
 
-#pageTwo main .blogPosts {
+#pageTwo .blogPosts {
   width: 100%;
   margin: 60px 20px;
 }
 
-#pageTwo main .blogPosts .blog {
+#pageTwo .blogPosts .blog {
   background-color: white;
   padding: 25px;
   border-bottom: 6px solid #227284;
 }
 
-#pageTwo main .blogPosts .comment {
+#pageTwo .blogPosts .comment {
   margin-top: 20px;
   background-color: white;
   padding: 25px;
@@ -932,16 +932,16 @@ form button {
           align-items: flex-start;
 }
 
-#pageTwo main .blogPosts .comment:nth-child(3) {
+#pageTwo .blogPosts .comment:nth-child(3) {
   border-bottom: 6px solid #227284;
 }
 
-#pageTwo main .blogPosts .comment p,
-#pageTwo main .blogPosts .comment time {
+#pageTwo .blogPosts .comment p,
+#pageTwo .blogPosts .comment time {
   padding: 0 20px;
 }
 
-#pageTwo main .blogPosts .comment p {
+#pageTwo .blogPosts .comment p {
   padding-top: 5px;
 }
 
@@ -1276,7 +1276,7 @@ form button {
   #pageTwo main {
     margin: 0 auto;
   }
-  #pageTwo main .blogSection {
+  #pageTwo .blogSection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1285,7 +1285,7 @@ form button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #pageTwo main .blogSection .aboutHarper {
+  #pageTwo .aboutHarper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1299,7 +1299,7 @@ form button {
     width: 100%;
     margin: 60px 0px;
   }
-  #pageTwo main .blogSection .aboutHarper .about {
+  #pageTwo .about {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1318,17 +1318,17 @@ form button {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  #pageTwo main .blogSection .aboutHarper .about img {
+  #pageTwo .about img {
     padding-right: 20px;
     padding-bottom: 0;
   }
-  #pageTwo main .blogSection .aboutHarper .about h2 {
+  #pageTwo .about h2 {
     font-size: 3rem;
   }
-  #pageTwo main .blogPosts {
+  #pageTwo .blogPosts {
     margin: 20px 0;
   }
-  #pageTwo main form button {
+  #pageTwo form button {
     margin-bottom: 40px;
   }
 }
@@ -1356,41 +1356,41 @@ form button {
 }
 
 @media (max-width: 640px) {
-  #pageTwo main .blogSection .aboutHarper .about h2 {
+  #pageTwo .aboutHarper .about h2 {
     font-size: 2.4rem;
     padding-bottom: 0;
   }
-  #pageTwo main .blogSection .aboutHarper .about p {
+  #pageTwo .aboutHarper .about p {
     font-size: 1.4rem;
     line-height: 20px;
   }
-  #pageTwo main .blogPosts .comment time {
+  #pageTwo .blogPosts .comment time {
     color: #227284;
     font-size: 1.4rem;
   }
-  #pageTwo main form div {
+  #pageTwo form div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #pageTwo main form div input {
+  #pageTwo form div input {
     width: 100%;
     margin: 20px 0;
     padding: 20px;
     border: none;
   }
-  #pageTwo main form div input:first-child {
+  #pageTwo form div input:first-child {
     margin-right: 0px;
     margin-bottom: 0px;
   }
-  #pageTwo main form div input:last-child {
+  #pageTwo form div input:last-child {
     margin-left: 0px;
   }
 }
 
 @media (max-width: 454px) {
-  #pageTwo main .blogSection .aboutHarper .about {
+  #pageTwo .aboutHarper .about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1400,22 +1400,22 @@ form button {
             flex-direction: column;
     margin: 0 auto;
   }
-  #pageTwo main .blogSection .aboutHarper .about img {
+  #pageTwo .aboutHarper .about img {
     padding-right: 0;
   }
-  #pageTwo main .blogSection .aboutHarper .about h2 {
+  #pageTwo .aboutHarper .about h2 {
     font-size: 2.4rem;
     padding: 20px 0;
   }
-  #pageTwo main .blogSection .aboutHarper .about p {
+  #pageTwo .aboutHarper .about p {
     padding: 0;
     font-size: 1.4rem;
     line-height: 20px;
   }
-  #pageTwo main .blogPosts .comment div img {
+  #pageTwo .blogPosts .comment div img {
     display: none;
   }
-  #pageTwo main .blogPosts .comment time {
+  #pageTwo .blogPosts .comment time {
     color: #227284;
     font-size: 1rem;
   }
@@ -1438,7 +1438,7 @@ form button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #pageThree main ul li {
+  #pageThree main li {
     padding-right: 0;
     padding: 20px;
   }
