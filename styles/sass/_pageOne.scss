@@ -1,41 +1,44 @@
 #pageOne {
 
+
+// HEADER
     header {
         background-color: $lightbluegrey;
     
         nav {
             height: 10vh;
             @include flexrow;
-    
-            ul {
-                @include flexrow;
-    
-                li {
-                    padding: 12px 26px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    font-family: $oswald;
-                    font-size: 1.7rem;
+        }
 
-                    &:hover {
-                        color: white;
-                    }
-                }
-            }
-            .fa-bars {
-                display: none;
+        ul {
+            @include flexrow;
+        }
+
+        li {
+            padding: 12px 26px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: $oswald;
+            font-size: 1.7rem;
+
+            &:hover {
+                color: white;
             }
         }
-    
+
+        .fa-bars {
+            display: none;
+        }   
+
         .title {
             font-size: 3.4rem;
         }
-    
+
         .headerContent {
             @include flexrow;
             justify-content: space-around;
         }
-    
+
         .headerImage {
             margin-right: 80px;
             width: 35%;
@@ -44,14 +47,14 @@
             position: relative;
             top: 30px;
         }
-    
+
         .headerText {
             font-size: 7rem;
             padding-right: 10%;
             position: relative;
             text-transform: uppercase;
             font-family: $oswald;
-    
+
             h1 {
                 position: relative;
             }
@@ -70,6 +73,8 @@
         }
     }
 
+
+// ABOUT
     .about {
         background-color: $white;
 
@@ -95,6 +100,7 @@
 
 
 
+// ABOUT INFO
     .aboutInfo {
         background-color: $white;
 
@@ -111,48 +117,49 @@
         .rowTwo {
             display: flex;
             justify-content: space-between;
+        }
 
-            .aboutContent {
-                width: 50%;
-                padding: 40px 100px;
-                padding-right: 0;
+        .aboutContent {
+            width: 50%;
+            padding: 40px 100px;
+            padding-right: 0;
+        }
+
+        .aboutContent:nth-child(2),
+        .aboutContent:nth-child(4) {
+            padding-right: 20px;
+        }
+
+        p {
+            padding-top: 20px;
+            @include body;
+        }
+
+        .aboutTitle {
+            @include flexcol;
+            position: relative;
+            justify-content: flex-start;
+
+            i {
+                position: absolute;
+                left: -60px;
+                background-color: $lightbluegrey;
+                padding: 15px;
+                border-radius: 100%;
+                font-size: 2rem;
             }
 
-            .aboutContent:nth-child(2),
-            .aboutContent:nth-child(4) {
-                padding-right: 20px;
-            }
-
-            p {
-                padding-top: 20px;
-                @include body;
-            }
-
-            .aboutTitle {
-                @include flexcol;
-                position: relative;
-                justify-content: flex-start;
-
-                i {
-                    position: absolute;
-                    left: -60px;
-                    background-color: $lightbluegrey;
-                    padding: 15px;
-                    border-radius: 100%;
-                    font-size: 2rem;
-                }
-
-                h3 {
-                    @include header;
-                    font-size: 2.4rem
-                }
+            h3 {
+                @include header;
+                font-size: 2.4rem
             }
         }
+        
 
         .rowOne {
             padding-top: 60px;
         }
-        
+
         .rowTwo {
             padding-bottom: 60px;
         }
@@ -160,7 +167,22 @@
 
 
 
+// BLOG
     .blog {
+
+        h3 {
+            @include header;
+            font-size: 2.4rem;
+        }
+
+        p {
+            padding: 20px 0; 
+            @include body;
+        }
+
+        button {
+            @include buttondefault;
+        }
 
         .blogRowOne,
         .blogRowTwo {
@@ -193,57 +215,45 @@
         .blogTextTwo {
             width: 40%;
         }
-
-        h3 {
-            @include header;
-            font-size: 2.4rem;
-        }
-
-        p {
-            padding: 20px 0; 
-            @include body;
-        }
-
-        button {
-            @include buttondefault;
-        }
     }
 
 
+
+// BIO
     .bio {
         background-color: $white;
+
+        h3 {
+            @include header;
+        }
+
+        p {
+            padding: 30px 0;
+            @include body;
+        }
+
+        a {
+            @include buttondefault;
+        }
 
         .bioContent {
             padding: 100px 0;
             @include flexrow;
             justify-content: space-between;
+        }
 
-            .bioImg {
-                width: 25%;
-                box-shadow: 20px 20px $duskblue;
-            }
+        .bioImg {
+            width: 25%;
+            box-shadow: 20px 20px $duskblue;
+        }
             
-            .bioText {
-                width: 65%;
-
-                h3 {
-                    @include header;
-                }
-
-                p {
-                    padding: 30px 0;
-                    @include body;
-                }
-
-                a {
-                    @include buttondefault;
-                }
-            }
+        .bioText {
+            width: 65%;
         }
     }
 
 
-
+// IMAGE GALLERY
     .gallery {
         padding: 80px 0;
 

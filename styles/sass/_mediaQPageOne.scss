@@ -1,15 +1,19 @@
 @media (max-width: 1020px) {
     #pageOne {
+
+
+        // HEADER
         header {
             .headerImage {
                 margin-right: 40px;
                 width: 40%;
                 min-width: 250px;
             }
+
             .headerText {
                 font-size: 5rem;
                 padding-right: 0;
-        
+
                 h1::after {
                     content: "";
                     background-image: url("../harper-assets/circle-text.png");
@@ -25,35 +29,37 @@
             }
         }
 
+
+// ABOUT
         .about {
             background-color: $white;
-        
+
             div {
                 padding: 100px 0;
                 text-align: center;
             }  
         }
 
+
+// ABOUT INFO
         .aboutInfo {
-        
+
             .banner {
                 height: 40vh;
             }
-        
-            .rowOne,
-            .rowTwo {
-        
-                .aboutContent {
-                    padding: 20px 30px;
-                }
-        
-                .aboutContent:nth-child(2),
-                .aboutContent:nth-child(4) {
-                    padding-right: 30px;
-                }
+
+            .aboutContent {
+                padding: 20px 30px;
+            }
+
+            .aboutContent:nth-child(2),
+            .aboutContent:nth-child(4) {
+                padding-right: 30px;
             }
         }
 
+
+// BLOG
         .blog {
 
             .blogRowOne,
@@ -64,12 +70,12 @@
             .blogRowTwo {
                 flex-direction: column-reverse;
             }
-        
+
             .blogImgOne,
             .blogImgTwo {
                 width: 80%;
             }
-        
+
             .blogTextOne,
             .blogTextTwo {
                 width: 80%;
@@ -85,23 +91,24 @@
                 @include header;
                 font-size: 2.4rem;
             }
-        
+
             p {
                 padding: 20px 0; 
                 @include body;
             }
-        
+
             button {
                 @include buttondefault;
             }
         }
 
 
+// BIO
         .bio {
 
             .bioContent {
                 padding: 80px 0;
-        
+
                 .bioImg {
                     width: 40%;
                 }
@@ -111,6 +118,9 @@
                 }
             }
         }
+
+
+// GALLERY
         .gallery  {
 
             padding: 0;
@@ -130,7 +140,10 @@
 }
 
 @media (max-width: 768px) {
+
     #pageOne {
+
+// HEADER
         header {
 
             .headerContent {
@@ -156,10 +169,10 @@
                 top: -16%;
                 right: -102px;
             }
-            
+
             .headerText {
                 display: none; 
-        }
+            }
 
             nav {
                 display: flex;
@@ -168,7 +181,7 @@
                 .menu {
                     display: none;
                 }
-        
+
                 .fa-bars {
                     padding: 12px 26px;
                     display: inline-block !important;
@@ -177,36 +190,40 @@
             }
         }
 
+
+// ABOUT
         .aboutInfo {
             width: 100%;
 
             .banner {
                 height: 30vh;
             }
-        
+
             .rowOne,
             .rowTwo {
                 flex-direction: column;
                 width: 100%;
+            }
 
-                .aboutContent {
-                    width: 80%;
-                    margin: 0 auto;
-                    padding-left: 50px;
-                }
+            .aboutContent {
+                width: 80%;
+                margin: 0 auto;
+                padding-left: 50px;
             }
         }
 
+
+// BIO
         .bio {
-        
+
             .bioContent {
                 padding: 40px;
                 flex-direction: column;
-        
+
                 .bioImg {
                     width: 80%;
                 }
-                
+
                 .bioText {
                     padding-top: 60px;
                     width: 100%;
@@ -219,10 +236,13 @@
 
 @media (max-width: 550px) {
     #pageOne {
+
+
         .wrapper {
             width: 90%
         }
 
+// HEADER
         header {
             .headerImage {
                 width: 25%;
@@ -239,6 +259,7 @@
             }
         }
 
+// BIO
         .bioText {
             padding-top: 60px;
             width: 100%;

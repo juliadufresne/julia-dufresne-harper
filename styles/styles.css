@@ -426,7 +426,7 @@ form button {
           align-items: center;
 }
 
-#pageOne header nav ul {
+#pageOne header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,7 +442,7 @@ form button {
           align-items: center;
 }
 
-#pageOne header nav ul li {
+#pageOne header li {
   padding: 12px 26px;
   text-transform: uppercase;
   font-weight: 600;
@@ -450,11 +450,11 @@ form button {
   font-size: 1.7rem;
 }
 
-#pageOne header nav ul li:hover {
+#pageOne header li:hover {
   color: white;
 }
 
-#pageOne header nav .fa-bars {
+#pageOne header .fa-bars {
   display: none;
 }
 
@@ -573,22 +573,18 @@ form button {
           justify-content: space-between;
 }
 
-#pageOne .aboutInfo .rowOne .aboutContent,
-#pageOne .aboutInfo .rowTwo .aboutContent {
+#pageOne .aboutInfo .aboutContent {
   width: 50%;
   padding: 40px 100px;
   padding-right: 0;
 }
 
-#pageOne .aboutInfo .rowOne .aboutContent:nth-child(2),
-#pageOne .aboutInfo .rowOne .aboutContent:nth-child(4),
-#pageOne .aboutInfo .rowTwo .aboutContent:nth-child(2),
-#pageOne .aboutInfo .rowTwo .aboutContent:nth-child(4) {
+#pageOne .aboutInfo .aboutContent:nth-child(2),
+#pageOne .aboutInfo .aboutContent:nth-child(4) {
   padding-right: 20px;
 }
 
-#pageOne .aboutInfo .rowOne p,
-#pageOne .aboutInfo .rowTwo p {
+#pageOne .aboutInfo p {
   padding-top: 20px;
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
@@ -597,8 +593,7 @@ form button {
   letter-spacing: .5px;
 }
 
-#pageOne .aboutInfo .rowOne .aboutTitle,
-#pageOne .aboutInfo .rowTwo .aboutTitle {
+#pageOne .aboutInfo .aboutTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,8 +613,7 @@ form button {
           justify-content: flex-start;
 }
 
-#pageOne .aboutInfo .rowOne .aboutTitle i,
-#pageOne .aboutInfo .rowTwo .aboutTitle i {
+#pageOne .aboutInfo .aboutTitle i {
   position: absolute;
   left: -60px;
   background-color: #b2dfe8;
@@ -628,8 +622,7 @@ form button {
   font-size: 2rem;
 }
 
-#pageOne .aboutInfo .rowOne .aboutTitle h3,
-#pageOne .aboutInfo .rowTwo .aboutTitle h3 {
+#pageOne .aboutInfo .aboutTitle h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 3.4rem;
@@ -644,6 +637,34 @@ form button {
 
 #pageOne .aboutInfo .rowTwo {
   padding-bottom: 60px;
+}
+
+#pageOne .blog h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 2.4rem;
+}
+
+#pageOne .blog p {
+  padding: 20px 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+#pageOne .blog button {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: #F38D8D;
+  padding: 12px 32px;
 }
 
 #pageOne .blog .blogRowOne,
@@ -695,17 +716,20 @@ form button {
   width: 40%;
 }
 
-#pageOne .blog h3 {
+#pageOne .bio {
+  background-color: #F6F6F6;
+}
+
+#pageOne .bio h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 3.4rem;
   font-weight: 600;
   letter-spacing: 1.5px;
-  font-size: 2.4rem;
 }
 
-#pageOne .blog p {
-  padding: 20px 0;
+#pageOne .bio p {
+  padding: 30px 0;
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
@@ -713,7 +737,7 @@ form button {
   letter-spacing: .5px;
 }
 
-#pageOne .blog button {
+#pageOne .bio a {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -721,10 +745,6 @@ form button {
   letter-spacing: 1.5px;
   background-color: #F38D8D;
   padding: 12px 32px;
-}
-
-#pageOne .bio {
-  background-color: #F6F6F6;
 }
 
 #pageOne .bio .bioContent {
@@ -747,41 +767,14 @@ form button {
           justify-content: space-between;
 }
 
-#pageOne .bio .bioContent .bioImg {
+#pageOne .bio .bioImg {
   width: 25%;
   -webkit-box-shadow: 20px 20px #227284;
           box-shadow: 20px 20px #227284;
 }
 
-#pageOne .bio .bioContent .bioText {
+#pageOne .bio .bioText {
   width: 65%;
-}
-
-#pageOne .bio .bioContent .bioText h3 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-size: 3.4rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-}
-
-#pageOne .bio .bioContent .bioText p {
-  padding: 30px 0;
-  font-family: "Cabin", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 25px;
-  letter-spacing: .5px;
-}
-
-#pageOne .bio .bioContent .bioText a {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  background-color: #F38D8D;
-  padding: 12px 32px;
 }
 
 #pageOne .gallery {
@@ -1083,14 +1076,11 @@ form button {
   #pageOne .aboutInfo .banner {
     height: 40vh;
   }
-  #pageOne .aboutInfo .rowOne .aboutContent,
-  #pageOne .aboutInfo .rowTwo .aboutContent {
+  #pageOne .aboutInfo .aboutContent {
     padding: 20px 30px;
   }
-  #pageOne .aboutInfo .rowOne .aboutContent:nth-child(2),
-  #pageOne .aboutInfo .rowOne .aboutContent:nth-child(4),
-  #pageOne .aboutInfo .rowTwo .aboutContent:nth-child(2),
-  #pageOne .aboutInfo .rowTwo .aboutContent:nth-child(4) {
+  #pageOne .aboutInfo .aboutContent:nth-child(2),
+  #pageOne .aboutInfo .aboutContent:nth-child(4) {
     padding-right: 30px;
   }
   #pageOne .blog .blogRowOne,
@@ -1236,8 +1226,7 @@ form button {
             flex-direction: column;
     width: 100%;
   }
-  #pageOne .aboutInfo .rowOne .aboutContent,
-  #pageOne .aboutInfo .rowTwo .aboutContent {
+  #pageOne .aboutInfo .aboutContent {
     width: 80%;
     margin: 0 auto;
     padding-left: 50px;
