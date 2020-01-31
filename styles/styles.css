@@ -238,6 +238,7 @@ html {
 html {
   font-size: 62.5%;
   /* 10px */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1252,8 +1253,7 @@ form button {
     display: block;
     text-align: right;
     float: right;
-    background: #004255;
-    color: #F6F6F6;
+    background: #F38D8D;
     position: fixed;
     width: 200px;
     right: 0%;
