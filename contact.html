@@ -11,14 +11,16 @@
 </head>
 <body id="pageThree">
     <nav class="navStyle">
-        <ul>
-            <li class="menu"><a href="./index.html">Home</a></li>
-            <li class="menu"><a href="#about">About</a></li>
-            <li><h2 class="title"><a href="./index.html">Harper</a></h2></li>
-            <li class="menu"><a href="./blog.html">Blog</a></li>
-            <li class="menu"><a href="./contact.html">Contact</a></li>
-        </ul>
-        <a href=""><i class="fas fa-bars"></i></a>
+        <label for="toggle" class="hamburger"><span class="sr-only">Navigation menu</span><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle" class="inputButton">
+                <ul class="headerNav">
+                    <li class="menu"><a href="./index.html">Home</a></li>
+                    <li class="menu"><a href="#about">About</a></li>
+                    <li class="title"><h2 class="title"><a href="./index.html">Harper</a></h2></li>
+                    <li class="menu"><a href="./blog.html">Blog</a></li>
+                    <li class="menu"><a href="./contact.html">Contact</a></li>
+                </ul>
+                <h2 class="mobileHarper">Harper</h2>
     </nav>
 
     </nav>
@@ -46,7 +48,7 @@
                 <input type="text" placeholder="Name">
                 <input type="email" name="" id="" placeholder="Email">
             </div>
-            <input type="text" name="" id="" placeholder="Comment" class="message">
+            <input type="text" name="" id="" placeholder="Message" class="message">
             <button>Post Comment</button>
         </form>
     </div>

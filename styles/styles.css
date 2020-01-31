@@ -317,6 +317,15 @@ nav {
           align-items: center;
 }
 
+nav label,
+nav input {
+  display: none;
+}
+
+nav .mobileHarper {
+  display: none;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,10 +356,6 @@ nav ul li:hover {
 
 nav ul .title {
   font-size: 3.4rem;
-}
-
-.fa-bars {
-  display: none;
 }
 
 footer {
@@ -409,6 +414,11 @@ form button {
   background-color: #b2dfe8;
 }
 
+#pageOne header label,
+#pageOne header input {
+  display: none;
+}
+
 #pageOne header nav {
   height: 10vh;
   display: -webkit-box;
@@ -424,6 +434,10 @@ form button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#pageOne header nav .mobileHarper {
+  display: none;
 }
 
 #pageOne header ul {
@@ -452,10 +466,6 @@ form button {
 
 #pageOne header li:hover {
   color: white;
-}
-
-#pageOne header .fa-bars {
-  display: none;
 }
 
 #pageOne header .title {
@@ -1203,14 +1213,74 @@ form button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #pageOne header nav .title {
+    display: none;
+  }
+  #pageOne header nav .mobileHarper {
+    display: block;
+    font-size: 3.4rem;
+    padding: 12px 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
   }
   #pageOne header nav .menu {
     display: none;
   }
-  #pageOne header nav .fa-bars {
+  #pageOne header nav .hamburger {
+    display: block;
     padding: 12px 26px;
     display: inline-block !important;
     font-size: 3.4rem;
+    cursor: pointer;
+  }
+  #pageOne header nav .hamburger i {
+    position: fixed;
+    top: 20px;
+    right: 26px;
+    z-index: 2;
+  }
+  #pageOne header nav input[type="checkbox"] {
+    display: none;
+  }
+  #pageOne header nav input[type="checkbox"]:checked + ul {
+    display: block;
+    text-align: right;
+    float: right;
+    background: #004255;
+    color: #F6F6F6;
+    position: fixed;
+    width: 200px;
+    right: 0%;
+    top: 0;
+    padding: 5px 0;
+    z-index: 1;
+    height: 100vh;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #pageOne header nav input[type="checkbox"]:checked + ul .hamburger {
+    color: #F6F6F6;
+  }
+  #pageOne header nav input[type="checkbox"]:checked + ul .menu {
+    display: block;
+  }
+  #pageOne header nav input[type="checkbox"]:checked + ul .menu:first-child {
+    padding-top: 50px;
+  }
+  #pageOne header nav input[type="checkbox"]:checked + ul a {
+    display: block;
+    font-size: 2.6rem;
+    width: 100%;
+    padding: 10px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-right: 25px;
   }
   #pageOne .aboutInfo {
     width: 100%;
@@ -1341,14 +1411,74 @@ form button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #pageTwo nav .title {
+    display: none;
+  }
+  #pageTwo nav .mobileHarper {
+    display: block;
+    font-size: 3.4rem;
+    padding: 12px 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
   }
   #pageTwo nav .menu {
     display: none;
   }
-  #pageTwo nav .fa-bars {
+  #pageTwo nav .hamburger {
+    display: block;
     padding: 12px 26px;
     display: inline-block !important;
     font-size: 3.4rem;
+    cursor: pointer;
+  }
+  #pageTwo nav .hamburger i {
+    position: fixed;
+    top: 20px;
+    right: 26px;
+    z-index: 2;
+  }
+  #pageTwo nav input[type="checkbox"] {
+    display: none;
+  }
+  #pageTwo nav input[type="checkbox"]:checked + ul {
+    display: block;
+    text-align: right;
+    float: right;
+    background: #004255;
+    color: #F6F6F6;
+    position: fixed;
+    width: 200px;
+    right: 0%;
+    top: 0;
+    padding: 5px 0;
+    z-index: 1;
+    height: 100vh;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #pageTwo nav input[type="checkbox"]:checked + ul .hamburger {
+    color: #F6F6F6;
+  }
+  #pageTwo nav input[type="checkbox"]:checked + ul .menu {
+    display: block;
+  }
+  #pageTwo nav input[type="checkbox"]:checked + ul .menu:first-child {
+    padding-top: 50px;
+  }
+  #pageTwo nav input[type="checkbox"]:checked + ul a {
+    display: block;
+    font-size: 2.6rem;
+    width: 100%;
+    padding: 10px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-right: 25px;
   }
   #pageTwo main .blogPosts {
     margin: 0;
@@ -1478,14 +1608,74 @@ form button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #pageThree nav .title {
+    display: none;
+  }
+  #pageThree nav .mobileHarper {
+    display: block;
+    font-size: 3.4rem;
+    padding: 12px 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
   }
   #pageThree nav .menu {
     display: none;
   }
-  #pageThree nav .fa-bars {
+  #pageThree nav .hamburger {
+    display: block;
     padding: 12px 26px;
     display: inline-block !important;
     font-size: 3.4rem;
+    cursor: pointer;
+  }
+  #pageThree nav .hamburger i {
+    position: fixed;
+    top: 20px;
+    right: 26px;
+    z-index: 2;
+  }
+  #pageThree nav input[type="checkbox"] {
+    display: none;
+  }
+  #pageThree nav input[type="checkbox"]:checked + ul {
+    display: block;
+    text-align: right;
+    float: right;
+    background: #004255;
+    color: #F6F6F6;
+    position: fixed;
+    width: 200px;
+    right: 0%;
+    top: 0;
+    padding: 5px 0;
+    z-index: 1;
+    height: 100vh;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #pageThree nav input[type="checkbox"]:checked + ul .hamburger {
+    color: #F6F6F6;
+  }
+  #pageThree nav input[type="checkbox"]:checked + ul .menu {
+    display: block;
+  }
+  #pageThree nav input[type="checkbox"]:checked + ul .menu:first-child {
+    padding-top: 50px;
+  }
+  #pageThree nav input[type="checkbox"]:checked + ul a {
+    display: block;
+    font-size: 2.6rem;
+    width: 100%;
+    padding: 10px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-right: 25px;
   }
 }
 

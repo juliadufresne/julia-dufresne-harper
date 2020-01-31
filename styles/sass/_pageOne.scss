@@ -4,10 +4,19 @@
 // HEADER
     header {
         background-color: $lightbluegrey;
+
+        label,
+        input {
+            display: none;
+        }
     
         nav {
             height: 10vh;
             @include flexrow;
+
+            .mobileHarper {
+                display: none;
+            }
         }
 
         ul {
@@ -26,9 +35,9 @@
             }
         }
 
-        .fa-bars {
-            display: none;
-        }   
+        // .fa-bars {
+        //     display: none;
+        // }   
 
         .title {
             font-size: 3.4rem;

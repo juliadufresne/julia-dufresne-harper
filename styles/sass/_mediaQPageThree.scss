@@ -59,16 +59,90 @@
         nav {
             display: flex;
             justify-content: space-between;
+            flex-direction: row-reverse;
+
+            .title {
+                display: none; 
+            }
+
+            .mobileHarper {
+                display: block;
+                font-size: 3.4rem;
+                padding: 12px 26px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-family: $oswald;
+            }
 
             .menu {
                 display: none;
             }
 
-            .fa-bars {
+            .hamburger {
+                display: block;
                 padding: 12px 26px;
                 display: inline-block !important;
                 font-size: 3.4rem;
+                cursor: pointer;
             }
+        
+            .hamburger i {
+                position: fixed;
+                top: 20px;
+                right: 26px;
+                z-index: 2;
+            }
+        
+            input[type="checkbox"] {
+                display: none;    
+            }
+        
+            input[type="checkbox"]:checked + ul{
+                display: block;
+                text-align: right;
+                float:right;
+                background: #004255;
+                color: $white;
+                position: fixed;
+                width: 200px;
+                right: 0%;
+                top: 0;
+                padding: 5px 0;
+                z-index: 1;
+                height: 100vh;
+                transition: all 0.5s;
+
+                    .hamburger {
+                        color: $white;
+                    }
+
+                    .menu {
+                        display: block;
+
+                        &:first-child {
+                            padding-top: 50px;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        font-size: 2.6rem;
+                        width: 100%;
+                        padding: 10px 0;
+                        transition: all 0.3s;
+                        padding-right: 25px;
+                    }
+            }
+
+            // .menu {
+            //     display: none;
+            // }
+
+            // .fa-bars {
+            //     padding: 12px 26px;
+            //     display: inline-block !important;
+            //     font-size: 3.4rem;
+            // }
         }
     }
 }
