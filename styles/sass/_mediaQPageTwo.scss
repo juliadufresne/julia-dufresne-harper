@@ -99,8 +99,8 @@
                 display: block;
                 text-align: right;
                 float:right;
-                background: #004255;
-                color: $white;
+                background: $accent;
+                // color: $white;
                 position: fixed;
                 width: 200px;
                 right: 0%;
@@ -175,7 +175,7 @@
             .comment {
                 time {
                     color: $duskblue;
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                     
                 }
             }
@@ -245,7 +245,7 @@
 
                     time {
                         color: $duskblue;
-                        font-size: 1rem;
+                        // font-size: 1rem;
                         
                     }
                 }

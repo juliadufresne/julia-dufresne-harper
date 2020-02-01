@@ -1201,8 +1201,8 @@ form button {
     height: 200px;
     display: block;
     position: absolute;
-    top: -16%;
-    right: -102px;
+    top: -17%;
+    right: -85px;
   }
   #pageOne header .headerText {
     display: none;
@@ -1450,8 +1450,7 @@ form button {
     display: block;
     text-align: right;
     float: right;
-    background: #004255;
-    color: #F6F6F6;
+    background: #F38D8D;
     position: fixed;
     width: 200px;
     right: 0%;
@@ -1496,7 +1495,7 @@ form button {
   }
   #pageTwo .blogPosts .comment time {
     color: #227284;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   #pageTwo form div {
     -webkit-box-orient: vertical;
@@ -1547,7 +1546,6 @@ form button {
   }
   #pageTwo .blogPosts .comment time {
     color: #227284;
-    font-size: 1rem;
   }
 }
 
@@ -1647,8 +1645,7 @@ form button {
     display: block;
     text-align: right;
     float: right;
-    background: #004255;
-    color: #F6F6F6;
+    background: #F38D8D;
     position: fixed;
     width: 200px;
     right: 0%;
