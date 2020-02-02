@@ -355,6 +355,10 @@ nav ul li:hover {
   color: white;
 }
 
+nav ul li:focus {
+  color: white;
+}
+
 nav ul .title {
   font-size: 3.4rem;
 }
@@ -1546,6 +1550,8 @@ form button {
   }
   #pageTwo .blogPosts .comment time {
     color: #227284;
+    padding: 0;
+    font-size: 1.1rem;
   }
 }
 
@@ -1677,7 +1683,7 @@ form button {
 }
 
 @media (max-width: 550px) {
-  header .headerTitle {
+  #pageThree header .headerTitle {
     font-size: 4.6rem;
     top: 365px;
   }

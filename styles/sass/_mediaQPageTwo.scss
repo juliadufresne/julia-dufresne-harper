@@ -1,6 +1,6 @@
 @media (max-width: 1020px) {
-    #pageTwo {
 
+    #pageTwo {
 
         // MAIN
         main {
@@ -50,8 +50,8 @@
 
 
 @media (max-width: 768px) {
-    #pageTwo {
 
+    #pageTwo {
 
         // NAV
         nav {
@@ -83,18 +83,18 @@
                 font-size: 3.4rem;
                 cursor: pointer;
             }
-        
+
             .hamburger i {
                 position: fixed;
                 top: 20px;
                 right: 26px;
                 z-index: 2;
             }
-        
+
             input[type="checkbox"] {
                 display: none;    
             }
-        
+
             input[type="checkbox"]:checked + ul{
                 display: block;
                 text-align: right;
@@ -131,16 +131,6 @@
                         padding-right: 25px;
                     }
             }
-
-            // .menu {
-            //     display: none;
-            // }
-
-            // .fa-bars {
-            //     padding: 12px 26px;
-            //     display: inline-block !important;
-            //     font-size: 3.4rem;
-            // }
         }
 
         // MAIN
@@ -153,6 +143,7 @@
 }
 
 @media (max-width: 640px){
+
     #pageTwo {
 
         // ABOUT
@@ -209,6 +200,7 @@
 
 
 @media (max-width: 454px) {
+
         #pageTwo {
 
             // ABOUT
@@ -245,8 +237,8 @@
 
                     time {
                         color: $duskblue;
-                        // font-size: 1rem;
-                        
+                        padding: 0;
+                        font-size: 1.1rem;
                     }
                 }
             }

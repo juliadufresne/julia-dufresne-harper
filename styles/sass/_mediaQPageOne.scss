@@ -2,7 +2,6 @@
     
     #pageOne {
 
-
         // HEADER
         header {
             .headerImage {
@@ -205,18 +204,18 @@
                     font-size: 3.4rem;
                     cursor: pointer;
                 }
-            
+
                 .hamburger i {
                     position: fixed;
                     top: 20px;
                     right: 26px;
                     z-index: 2;
                 }
-            
+
                 input[type="checkbox"] {
                     display: none;    
                 }
-            
+
                 input[type="checkbox"]:checked + ul{
                     display: block;
                     text-align: right;
@@ -301,6 +300,7 @@
 }
 
 @media (max-width: 550px) {
+
     #pageOne {
 
         .wrapper {
